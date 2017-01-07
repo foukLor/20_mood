@@ -1,6 +1,6 @@
 # Site for the Mood
 
-[TODO. There will be project description]
+Thise site generates a joke to you. Example [here](https://fouklor.github.io/20_mood/)
 
 # Project Goals
 
