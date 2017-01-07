@@ -1,5 +1,5 @@
 function setRandomeQuote(){
-    $.getJSON("quotes.json" + '&callback=?',function(json){
+    $.getJSON("quotes.json",function(json){
         randomIndex = Math.floor(Math.random()*json.length)
          $("quote").text(json[randomIndex].phrase);
     })
