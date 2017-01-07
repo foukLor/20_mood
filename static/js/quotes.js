@@ -1,14 +1,14 @@
 function setRandomeQuote(){
     $.getJSON("static/quotes.json",function(json){
         randomIndex = Math.floor(Math.random()*json.length)
-         $("quote").text(json[randomIndex].phrase);
+         $("#quote").text(json[randomIndex].phrase);
+         $("#signature").text(json[randomIndex].signature);
     })
 }
-var quote = $('p.quote');
 
-$(document).ready(function(){
+$(window).load(function(){
     setRandomeQuote();
 });
 
 
-$("next").click(setRandomeQuote);
+$("#next").click(setRandomeQuote);
